@@ -1,0 +1,5 @@
+=BlinkyTape Ruby
+
+For more information see: http://blinkinlabs.com/blinkytape/
+
+For usage, see test/unit/blink_test.rb
