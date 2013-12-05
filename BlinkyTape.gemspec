@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.authors           = ["Tony Buser"]
   s.email             = 'tbuser@gmail.com'
   s.homepage          = 'http://github.com/tbuser/BlinkyTape_Ruby'
+  s.license           = 'GPL-3.0'
 
   s.require_paths     = ["lib"]
   s.files             = Dir["{lib}/**/*.rb", "test/*", "LICENSE", "README.rdoc"]
