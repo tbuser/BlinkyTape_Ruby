@@ -18,7 +18,7 @@ class BlinkyTape
     # @serial = SerialPort.new(@port, 115200, 8, 1, SerialPort::NONE)
     @serial = SerialPort.new(@port, 115200)
 
-    raise "Cannot connect to #{@port}" if @serial.nil?    
+    raise "Cannot connect to #{@port}" if @serial.nil?
   end
 
   def reset
@@ -33,13 +33,13 @@ class BlinkyTape
   end
 
   def show
-    @serial.write 255.chr
+    control = 0.chr + 0.chr + 255.chr
+    @serial.write control
     @serial.flush
   end
   
   def send_pixel(r,g,b)
     sleep 0.001
-    data = ""
     r = 254 if r == 255
     g = 254 if g == 255
     b = 254 if b == 255

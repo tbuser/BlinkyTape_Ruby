@@ -3,3 +3,7 @@
 For more information see: http://blinkinlabs.com/blinkytape/
 
 For usage, see test/unit/blink_test.rb
+
+On Linux you'll need to add your user to the 'dialout' group in order to access the device
+e.g. sudo usermod -a -G dialout <user>
+You may need to logout and log back in for the changes to take effect
